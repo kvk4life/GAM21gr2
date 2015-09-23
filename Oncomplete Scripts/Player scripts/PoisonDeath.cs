@@ -25,14 +25,11 @@ public class PoisonDeath : MonoBehaviour {
 	}
 	
 	public void Poisoned(GameObject poisonedPlayer){
-		if (poisonedPlayer.GetComponent<BreathHolding> ().inSafeZone || poisonedPlayer.GetComponent<BreathHolding> ().holdBreath) {
-			return;
-		} 
-		else {
+		if (!poisonedPlayer.GetComponent<BreathHolding> ().inSafeZone && !poisonedPlayer.GetComponent<BreathHolding> ().holdBreath) {
 			if(Time.time > poisonRate + nextPoison){
 				poisonedPlayer.GetComponent<PlayerHealth>().Damage(poisonDamage);
 				nextPoison = Time.time;
 			}
-		}
+		} 
 	}
 }

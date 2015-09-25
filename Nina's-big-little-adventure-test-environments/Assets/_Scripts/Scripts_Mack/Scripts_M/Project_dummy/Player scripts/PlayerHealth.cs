@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour {
 		}
 	}
 
-	float Heal (float heal){
+	public float Heal (float heal){
 		if(health <= 2){
 			health += heal;
 		}

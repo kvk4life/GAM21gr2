@@ -11,25 +11,31 @@ public class Interactables : MonoBehaviour {
 	public GameObject madeliefjesText;
 	public GameObject healthPackText;
 	public GameObject naaldText;
+	public GameObject shieldText;
+	public GameObject shield;
 	public Transform spawnPos;
-	public Transform theCanvas;
+    public Transform theCanvas;
 	private bool maySpawn = true;
 	public Text madeliefjesCountText;
 	GameObject interactableObject;
 
-	void OnTriggerStay (Collider collision){
-		if(collision.transform.tag ==  "Madeliefje"){
+	void OnTriggerStay(Collider collision) {
+		if (collision.transform.tag == "Madeliefje") {
 			interactableObject = collision.gameObject;
 			Madeliefjes();
-        }
-		if(collision.transform.tag == "HealthPack"){
+		}
+		if (collision.transform.tag == "HealthPack") {
 			interactableObject = collision.gameObject;
 			HealthPacks();
-        }
-		if(collision.transform.tag == "Naald"){
+		}
+		if (collision.transform.tag == "Needle") {
 			interactableObject = collision.gameObject;
 			Needle();
-        }
+		}
+		if (collision.transform.tag == "Shield"){
+			interactableObject = collision.gameObject;
+			Shield();
+		}
 	}
 
 	void Update() {
@@ -49,6 +55,9 @@ public class Interactables : MonoBehaviour {
 					break;
 				case "Naald":
 					SetNeedle();
+					break;
+				case "Shield":
+					SetShield();
 					break;
 			}
 		}
@@ -94,8 +103,21 @@ public class Interactables : MonoBehaviour {
 			maySpawn = false;
 		}
 	}
+
 	void Needle (){
 		//heeft naald
+	}
+
+	void Shield() {
+		if (maySpawn) {
+			shownText = (GameObject)Instantiate(shieldText, spawnPos.position, Quaternion.identity);
+			shownText.transform.SetParent(theCanvas);
+			maySpawn = false;
+		}
+	}
+
+	void SetShield() {
+		shield.gameObject.SetActive(true);
 	}
 
 	void OnTriggerExit (){

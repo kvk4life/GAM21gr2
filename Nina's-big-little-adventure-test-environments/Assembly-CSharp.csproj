@@ -53,9 +53,6 @@
      <Compile Include="Assets\_Scripts\Scripts Alieke\Levels\LoadNextLevel.cs" />
      <Compile Include="Assets\_Scripts\Scripts Alieke\Levels\PlayerLeafActivate.cs" />
      <Compile Include="Assets\_Scripts\Scripts Alieke\Levels\TriggerAnimatie.cs" />
-     <Compile Include="Assets\_Scripts\Scripts Alieke\Player\CamConBody.cs" />
-     <Compile Include="Assets\_Scripts\Scripts Alieke\Player\CamConHead.cs" />
-     <Compile Include="Assets\_Scripts\Scripts Alieke\Player\CamWallContr.cs" />
      <Compile Include="Assets\_Scripts\Scripts Alieke\Player\LookAt.cs" />
      <Compile Include="Assets\_Scripts\Scripts Alieke\Player\PlayerAttack.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Enemy_Scripts\Enemie_Insantiater.cs" />
@@ -78,9 +75,6 @@
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\SafeZone.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\Stamina.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\Water Death.cs" />
-     <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Scripts van Filmpjes\Film 1.cs" />
-     <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Scripts van Filmpjes\Film2.cs" />
-     <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Scripts van Filmpjes\Film3.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Test1.cs" />
      <None Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Shaders\WrapLambert.shader" />
      <None Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Shaders\Diffuse lighting.shader" />

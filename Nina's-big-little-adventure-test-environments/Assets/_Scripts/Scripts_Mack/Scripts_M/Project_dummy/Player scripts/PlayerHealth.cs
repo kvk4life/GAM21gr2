@@ -1,29 +1,32 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
 	public float health;
+	GameObject gameMng;
+	bool dead;
+	
+	public void Start(){
+		gameMng = GameObject.Find ("GameMng");
+	}
 	
 	public float Damage (float damage){
-		health -= damage;
-		if(health <= 0){
-			GameObject.Find ("GameMng").GetComponent<Respawn> ().Respawning();
-			Destroy(gameObject);
+		if(health > 0){
+			health -= damage;
+		}
+		if(health < 1){
+			Death ();
 		}
 		return health;
 	}
-
-	public void Update(){
-		//Testing Respawning
-		if(health <= 0){
-			//Game Over Scherm.
-			GameObject.Find ("GameMng").GetComponent<Respawn> ().Respawning();
-			Destroy(gameObject);
-		}
+	
+	public void Death(){
+		gameMng.GetComponent<GameOver>().gameOver = true;
+		gameMng.GetComponent<Respawn> ().Respawning();
 	}
-
+	
 	public float Heal (float heal){
-		if(health <= 2){
+		if(health < 3){
 			health += heal;
 		}
 		return health;

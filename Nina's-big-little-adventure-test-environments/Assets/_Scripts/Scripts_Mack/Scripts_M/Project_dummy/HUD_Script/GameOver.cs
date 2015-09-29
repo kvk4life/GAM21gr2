@@ -11,10 +11,6 @@ public class GameOver : MonoBehaviour {
 
 	public GameObject GameOverScreen;
 
-	public void Start(){
-
-	}
-	
 	public void Update(){
 		Fading ();
 		ColorTest ();

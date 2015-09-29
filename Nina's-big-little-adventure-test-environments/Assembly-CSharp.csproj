@@ -71,6 +71,7 @@
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\CheckPoint.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\Defense.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\Fall Damage.cs" />
+     <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\FallDamage.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\PoisonDeath.cs" />
      <Compile Include="Assets\_Scripts\Scripts_Mack\Scripts_M\Project_dummy\Player scripts\Respawn.cs" />

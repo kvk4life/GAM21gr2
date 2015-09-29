@@ -42,7 +42,7 @@ public class BreathHolding : MonoBehaviour {
 			curBreath -= breathReduce;
 			nextReduce = Time.time;
 			if (curBreath == minBreath) {
-				//GetComponent<PlayerHealth> ().Damage (noBreathDamage);
+				GetComponent<PlayerHealth> ().Damage (noBreathDamage);
 			}
 		}
 	}

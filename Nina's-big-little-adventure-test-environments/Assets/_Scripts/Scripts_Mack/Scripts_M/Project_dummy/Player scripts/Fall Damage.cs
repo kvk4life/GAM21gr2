@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FallDamage : MonoBehaviour {
+public class testFall : MonoBehaviour {
 	public float lowDamage;
 	public float midDamage;
 	public float highDamage;

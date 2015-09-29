@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour {
 	public void Update(){
 		//Testing Respawning
 		if(health <= 0){
+			//Game Over Scherm.
 			GameObject.Find ("GameMng").GetComponent<Respawn> ().Respawning();
 			Destroy(gameObject);
 		}

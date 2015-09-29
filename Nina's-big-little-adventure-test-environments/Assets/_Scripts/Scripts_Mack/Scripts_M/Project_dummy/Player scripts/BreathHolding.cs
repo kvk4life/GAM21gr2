@@ -22,10 +22,20 @@ public class BreathHolding : MonoBehaviour {
 	}
 
 	public void Update(){
+		Equalizer ();
 		HoldingBreath ();
 		Reducer ();
 		Regenerator ();
-		Equalizer ();
+	}
+
+	
+	public void Equalizer(){
+		if(curBreath > maxBreath){
+			curBreath = maxBreath;
+		}
+		if(curBreath < minBreath){
+			curBreath = minBreath;
+		}
 	}
 
 	public void HoldingBreath(){
@@ -41,7 +51,7 @@ public class BreathHolding : MonoBehaviour {
 		if (Time.time > reduceRate + nextReduce && holdBreath) {
 			curBreath -= breathReduce;
 			nextReduce = Time.time;
-			if (curBreath == minBreath) {
+			if (curBreath < minBreath + 1) {
 				GetComponent<PlayerHealth> ().Damage (noBreathDamage);
 			}
 		}
@@ -53,15 +63,6 @@ public class BreathHolding : MonoBehaviour {
 				curBreath += breathRegen;
 				nextRegen = Time.time;
 			}
-		}
-	}
-
-	public void Equalizer(){
-		if(curBreath > maxBreath){
-			curBreath = maxBreath;
-		}
-		if(curBreath < minBreath){
-			curBreath = minBreath;
 		}
 	}
 }

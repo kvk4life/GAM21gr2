@@ -4,7 +4,7 @@ using System.Collections;
 public class Respawn : MonoBehaviour {
 	public Transform[] checkPoints;
 	public int curCheckPoint;
-	public GameObject Player;
+	public GameObject player;
 
 	public int SetCheckPoint(int checkedPoint){
 		curCheckPoint = checkedPoint;
@@ -12,6 +12,7 @@ public class Respawn : MonoBehaviour {
 	}
 
 	public void Respawning(){
-		Instantiate (Player, checkPoints [curCheckPoint].position, checkPoints [curCheckPoint].rotation);
+		player.transform.position = checkPoints [curCheckPoint].position;
+		player.transform.rotation = checkPoints [curCheckPoint].rotation;
 	}
 }

@@ -3,8 +3,10 @@
 -nowarn:0169
 -out:Temp/Assembly-CSharp.dll
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
 -r:"C:/Program Files/Unity/Editor/Data\Managed/Mono.Cecil.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
@@ -91,9 +93,11 @@ Assets/Scripts/Enemy/Enemy_Stats.cs
 Assets/Scripts/HUD/GameOver.cs
 Assets/Scripts/HUD/Main_Menu.cs
 Assets/Scripts/HUD/StaminaBar.cs
+Assets/Scripts/HUD/Volume.cs
 Assets/Scripts/LevelScripts/ActivateNextLevel.cs
 Assets/Scripts/LevelScripts/CheckPoint.cs
 Assets/Scripts/LevelScripts/CurLevel.cs
+Assets/Scripts/LevelScripts/Interactables.cs
 Assets/Scripts/LevelScripts/Leaves.cs
 Assets/Scripts/LevelScripts/LevelStats.cs
 Assets/Scripts/LevelScripts/LoadNextLevel.cs
@@ -110,7 +114,5 @@ Assets/Scripts/Player/LookAt.cs
 Assets/Scripts/Player/PlayerAttack.cs
 Assets/Scripts/Player/PlayerHealth.cs
 Assets/Scripts/Player/Stamina.cs
-"Assets/_Scripts/Scripts Alieke/Collectables/Interactables.cs"
-Assets/_Scripts/Scripts_Mack/Scripts_M/Project_dummy/HUD_Script/Volume.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

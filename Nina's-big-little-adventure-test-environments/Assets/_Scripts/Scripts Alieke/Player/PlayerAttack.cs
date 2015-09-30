@@ -7,15 +7,14 @@ public class PlayerAttack : MonoBehaviour {
 	public Color meh;
 
 	void Update (){
-		if(Input.GetKeyDown (KeyCode.E)){
+		if(Input.GetButtonDown("Attack")){
 			//hit animatie	
-		}
+	}
 	}
 
 	void OnCollisionEnter(Collision collision){
 		if(collision.transform.tag == "Enemy"){
-			collision.transform.GetComponent <EnemyHealth>().HealthEnemy(damage);
+		//	collision.transform.GetComponent <EnemyHealth>().HealthEnemy(damage);
 		}
-		print (collision);
 	}
 }

@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\Player\Defense.cs" />
      <Compile Include="Assets\Scripts\Player\FallDamage.cs" />
      <Compile Include="Assets\Scripts\Player\LookAt.cs" />
+     <Compile Include="Assets\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\Stamina.cs" />

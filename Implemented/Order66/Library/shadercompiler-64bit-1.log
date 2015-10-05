@@ -1,5 +1,5 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-29744
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-9576
 Cmd: getPlatforms
 Cmd: preprocess
   insize=4320 outsize=1045 ok=1
@@ -8,14 +8,6 @@ Cmd: preprocess
 Cmd: preprocess
   insize=12408 outsize=2547 ok=1
 Cmd: compileSnippet
-  api=4 type=0 insize=3409 outsize=2484 kw= pd= ok=1
+  api=4 type=0 insize=7364 outsize=3037 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON pd= ok=1
 Cmd: compileSnippet
-  api=4 type=1 insize=3409 outsize=1249 kw= pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=70382 outsize=3931 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=70382 outsize=12446 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON pd= ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=70382 outsize=3541 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON pd= ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=70382 outsize=12137 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON pd= ok=1
+  api=4 type=1 insize=7364 outsize=10593 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON pd= ok=1

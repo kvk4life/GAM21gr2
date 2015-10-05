@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Enemy\Enemy_Attack.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy_Stats.cs" />
      <Compile Include="Assets\Scripts\HUD\GameOver.cs" />
+     <Compile Include="Assets\Scripts\HUD\GamePause.cs" />
      <Compile Include="Assets\Scripts\HUD\Heartscript.cs" />
      <Compile Include="Assets\Scripts\HUD\Main_Menu.cs" />
      <Compile Include="Assets\Scripts\HUD\StaminaBar.cs" />
